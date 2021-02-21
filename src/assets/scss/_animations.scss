@@ -1,0 +1,63 @@
+@keyframes inputActions {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes commentScale {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes shadowBlur {
+  from {
+    opacity: 1;
+    box-shadow: 0 0 20px 20px #F4EDDC;
+  }
+  to {
+    opacity: 0;
+    box-shadow: 0 0 20px 80px #F4EDDC;
+  }
+}
+
+@keyframes dripIn {
+  from {
+    display: none;
+    transform: translateX(-50px) scale(0.3);
+  }
+  to {
+    transform: translateX(0px) scale(1);
+    display: block;
+  }
+}
+
+@keyframes dripOut {
+  from {
+    left: -20px;
+    border-radius: 10% 100%;
+  }
+  30% {
+    border-radius: 10% 10%;
+  }
+  80% {
+    border-radius: 10% 30%;
+  }
+  to {
+    left: -32px;
+    border-radius: 10% 100%;
+  }
+}
